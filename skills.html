@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="src/css/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== NAVIGATION WITH PROFILE ===== -->
+    <nav class="glass-nav">
+        <div class="nav-left">
+            <img src="src/images/me.jpg" alt="Profile Photo" class="nav-profile-img">
+            <span class="nav-name">Mohammad Hossien Abasszadeh</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- ===== SKILLS CONTENT ===== -->
+    <div class="glass-container">
+        <h2 class="skills-title"><i class="fas fa-cogs"></i> My Skills</h2>
+        <p class="skill-instruction"></p>
+        
+        <div class="skills-grid">
+            <!-- Python -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h3>Python</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Advanced (90%)</p>
+                    <p>
+                        The first programming language I learned was Python. I spent about 6 months on this language. 
+                        Topics learned included file handling, object-oriented programming in Python, basic data analysis, 
+                        and modular (library) code writing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- OOP -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-object-group"></i></div>
+                <h3>Object-Oriented Programming</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Basic (25%)</p>
+                    <p>
+                        In object-oriented programming, 
+                        I have learned and coded topics such as inheritance, polymorphism, object-oriented concepts, etc.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-github"></i></div>
+                <h3>Git & GitHub</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Basic (30%)</p>
+                    <p>
+                        Ability to upload a repository to GitHub, use repositories on it, 
+                        add readme functionality to html pages, create a repository in Git, 
+                        define different branches, merge branches, etc.
+                    </p>
+                </div>
+            </div>
+
+            <!-- HTML & CSS -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML & CSS</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Low (10%)</p>
+                    <p>
+                        A basic understanding of HTML, CSS, and JS to understand the content and meet the needs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                <h3>Linux</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Intermediate (70%)</p>
+                    <p>
+                       Proficient in bash scripting, file permissions, process management, 
+                       installing and uninstalling software via terminal, installing software manually, relative familiarity with <strong>awk</strong> 
+                    </p>
+                </div>
+            </div>
+
+            <!-- AI Agency -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Prompt Engineer</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Medium (60%)</p>
+                    <p>
+                       The ability to understand the request to AI to give more accurate answers, 
+                       defining the fine details required to make the answers more personalized. 
+                       For example, the design of this site 
+                    </p>
+                </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Responsive Design</h3>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> low (10%)</p>
+                    <p>
+                        Basic understanding of responsive design just to know how it works
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script/skills.js"></script>
+</body>
+</html>

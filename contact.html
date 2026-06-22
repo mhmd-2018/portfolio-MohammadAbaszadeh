@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section">
+        <h2><i class="fas fa-address-book"></i> Contact Me</h2>
+        <p class="subtitle">Have a question or want to work together? Feel free to reach out!</p>
+
+        <div class="contact-container">
+            <!-- ===== LEFT: CONTACT INFO ===== -->
+            <div class="contact-left">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:mhmd2003hosien@gmail.com">mhmd2003hosien@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/mhmd-2018" target="_blank">github.com/mhmd-2018</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/mohammad-hosien" target="_blank">linkedin.com/in/mohammad-hosien</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+989390295927">+98 939 0295 5927</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Tehran, Iran</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/mhmd-2018" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/mohammad-hosien" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mhmd2003hosien@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- ===== RIGHT: CONTACT FORM ===== -->
+            <div class="contact-right">
+                <h3>Send Me a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                        <input type="text" id="subject" placeholder="Enter subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Message</label>
+                        <textarea id="message" placeholder="Write your message here..." rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="src/script/skills.js"></script>
+</body>
+</html>

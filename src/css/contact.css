@@ -1,0 +1,457 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #323232 0%, #000000 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ===== GLASS NAVIGATION ===== */
+nav {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    transform: translateY(-2px);
+}
+
+nav ul li a.active {
+    background: rgba(1, 73, 255, 0.40);
+    color: white;
+}
+
+nav ul li a:active {
+    transform: scale(0.95);
+}
+
+/* ===== GLASS SECTION ===== */
+.section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    display: inline-block;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* ===== CONTACT CONTAINER ===== */
+.contact-container {
+    display: flex;
+    gap: 50px;
+}
+
+/* ===== LEFT SIDE ===== */
+.contact-left {
+    flex: 1;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(1, 73, 255, 0.90);
+    transform: translateX(8px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-details h4 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.contact-details a,
+.contact-details span {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: rgba(1, 73, 255, 0.90);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== RIGHT SIDE ===== */
+.contact-right {
+    flex: 1.5;
+}
+
+.contact-right h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== FORM ===== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+}
+
+.form-group label i {
+    margin-right: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    background: rgba(1, 73, 255, 0.60);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn:hover {
+    background: rgba(1, 73, 255);
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+/* ===== TOP BUTTON ===== */
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 999;
+}
+
+#topBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-left {
+        order: 2;
+    }
+
+    .contact-right {
+        order: 1;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        padding: 15px 20px;
+        top: 10px;
+    }
+
+    .section {
+        margin: 15px;
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .contact-right h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-item {
+        padding: 12px 15px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .contact-details a,
+    .contact-details span {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    #topBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .contact-right h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .contact-details h4 {
+        text-align: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}

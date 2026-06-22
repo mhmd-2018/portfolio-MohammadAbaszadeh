@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohammad Hossien Abaszadeh</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="section hero">
+        <img src="src/images/me.jpg" alt="Profile Photo" class="profile-img">
+        <h1>Mohammad Hossien Abasszadeh</h1>
+        <p class="title">Engineering Student | Back-end Developer</p>
+        <p>Welcome to my personal portfolio</p>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section content">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>
+            I'm Mohammad, a beginner developer and problem solver. I love building useful and new tools 
+            and learning new lessons every day. Currently focused on Django, Back-end development, and contributions in learning. 
+        </p>
+        <p><strong>
+            In this page you can see a summary of my skills, projects I done and the ways to contact me.
+        </strong></p>
+        <a href="about.html" target="_blank" class="github-btn">
+                More <i class="fas fa-arrow-right"></i>
+            </a>
+    </section>
+
+    <!-- ===== SKILLS SECTION (UPDATED WITH HOVER CARDS) ===== -->
+    <section id="skills" class="section content">
+        <h2><i class="fas fa-cogs"></i> My Skills</h2>
+        <p class="skill-instruction">👆 go to Skills page to learn more about my skill </p>
+        
+        <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h3>Python</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 90%"></div>
+                </div>
+                <span class="level-text">Advanced</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Advanced (90%)</p>
+                </div>
+            </div>
+
+            <!-- Skill 2: OOP -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-object-group"></i> 
+                </div>
+                <h3>Object-Oriented Programming</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 25%"></div>
+                </div>
+                <span class="level-text">Basic</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Basic (25%)</p>
+                </div>
+            </div>
+
+            <!-- Skill: AI Agency -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-terminal"></i> 
+                </div>
+                <h3>Prompt Engineer</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 60%"></div>
+                </div>
+                <span class="level-text">Medium</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Medium (60%)</p>
+                </div>
+            </div>
+
+            <!-- Skill 3: Git & GitHub -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>Git & GitHub</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 30%"></div>
+                </div>
+                <span class="level-text">Basic</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Basic (30%)</p>
+                </div>
+            </div>
+
+            <!-- Skill 4: HTML & CSS -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML & CSS</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 10%"></div>
+                </div>
+                <span class="level-text">Low</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Low (10%)</p>
+                </div>
+            </div>
+
+            <!-- Skill 5: Linux -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                <h3>Linux</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 70%"></div>
+                </div>
+                <span class="level-text">Intermediate</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Intermediate (70%)</p>
+                </div>
+            </div>
+
+            <!-- Skill 6: Responsive Design -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Responsive Design</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 10%"></div>
+                </div>
+                <span class="level-text">Low</span>
+                <div class="skill-description">
+                    <p><strong>Level:</strong> Low (10%)</p>
+                </div>
+            
+            </div>
+            <div class="more">
+                <a href="skills.html" target="_blank" class="github-btn">
+                    Skills page <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section content">
+        <h2><i class="fas fa-folder-open"></i> My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="src/images/linux.png" alt="Linux Exercise">
+                <h3>Linux Exercise</h3>
+                <p>Basic bash scripting for check the system and report to user in .txt file</p>
+                <a href="projects.html#project1" target="_blank" class="btn">View on projects page</a>
+            </div>
+            <div class="project-card">
+                <img src="src/images/python1.png" alt="Python Exercise">
+                <h3>Basic Python Password checker</h3>
+                <p>Basic Python script for check 8 items in Password</p>
+                <a href="projects.html#project2" target="_blank" class="btn">View on projects page</a>
+            </div>
+            <div class="project-card">
+                <img src="src/images/python2.png" alt="Git Practice">
+                <h3>Simple store</h3>
+                <p>Basic Python OOP and Medium level of Python used for it</p>
+                <a href="projects.html#project3" target="_blank" class="btn">View on projects page</a>
+            </div>
+            <div class="project-card">
+                <img src="src/images/proto.png" alt="Git Practice">
+                <h3>My Portfolio</h3>
+                <p>I use HTMl,CSS,js for build it</p>
+                <a href="projects.html#project4" target="_blank" class="btn">View on projects page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section content">
+        <h2><i class="fas fa-address-book"></i> Contact Me</h2>
+        <p>
+            Here me github and linkedin account; If you want message me or need more contact way, You can press "contact me" button
+        </p>
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="https://github.com/mhmd-2018" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i> View my GitHub
+            </a>
+            <a href="https://linkedin.com/in/mohammad-hosien" target="_blank" class="linkedin-btn">
+                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+            <a href="contact.html" target="_blank" class="github-btn">
+                <i class="fas fa-paper-plane"></i>Contact Me
+            </a>
+        </div>
+        
+    </section>
+
+    <!-- ===== TOP BUTTON ===== -->
+    <button id="topBtn" title="Go to top">⬆ Top</button>
+
+    <script src="src/script/script.js"></script>
+</body>
+</html>
